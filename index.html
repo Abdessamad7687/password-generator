@@ -11,6 +11,40 @@
       <input type="text" class="form-control" id="password" readonly>
     </div>
     <div class="form-group">
+      <label>Character Set:</label>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="characterSet" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+        <label class="form-check-label">Uppercase Letters</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="characterSet" value="abcdefghijklmnopqrstuvwxyz">
+        <label class="form-check-label">Lowercase Letters</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="characterSet" value="0123456789">
+        <label class="form-check-label">Numbers</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="characterSet" value="!@#$%^&*()">
+        <label class="form-check-label">Symbols</label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label>Password Length:</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="length" value="8" checked>
+        <label class="form-check-label">8</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="length" value="12">
+        <label class="form-check-label">12</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="length" value="16">
+        <label class="form-check-label">16</label>
+      </div>
+    </div>
+    <div class="form-group">
       <button class="btn btn-primary mr-2" onclick="generateAndDisplayPassword()">Generate Password</button>
       <button class="btn btn-secondary" onclick="copyPassword()">Copy to Clipboard</button>
     </div>
